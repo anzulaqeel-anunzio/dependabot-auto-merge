@@ -1,0 +1,22 @@
+# Developed for Anunzio International by Anzul Aqeel. Contact +971545822608 or +971585515742. Linkedin Profile: linkedin.com/in/anzulaqeel
+
+name: 'Dependabot Auto-Merge'
+description: 'Approves and auto-merges Dependabot PRs.'
+author: 'Anzul Aqeel'
+inputs:
+  token:
+    description: 'GitHub Token'
+    required: true
+    default: '${{ github.token }}'
+  command:
+    description: 'Command: approve, enable-auto-merge, or both'
+    required: false
+    default: 'both'
+runs:
+  using: 'node16'
+  main: 'index.js'
+branding:
+  icon: 'git-merge'
+  color: 'blue'
+
+# Developed for Anunzio International by Anzul Aqeel. Contact +971545822608 or +971585515742. Linkedin Profile: linkedin.com/in/anzulaqeel
